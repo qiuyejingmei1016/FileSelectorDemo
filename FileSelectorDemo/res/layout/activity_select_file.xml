@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <!--titleView-->
+    <include layout="@layout/title_bar_view" android:id="@+id/title_bar_view"/>
+
+    <!--路径提示view-->
+    <TextView
+            android:layout_below="@+id/title_bar_view"
+            android:background="@color/bg_grey"
+            android:id="@+id/path_tip_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:ellipsize="end"/>
+
+
+    <!--文件展示view-->
+    <ListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/path_tip_view"
+            android:divider="@null"/>
+
+    <TextView
+            android:id="@+id/empty_tip_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/ico_empty_tip"
+            android:textColor="#BEBBBB"
+            android:textSize="18sp"
+            android:text="当前暂无文件"
+            android:visibility="invisible"/>
+
+</RelativeLayout>

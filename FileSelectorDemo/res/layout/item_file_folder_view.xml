@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:minHeight="60dp"
+              android:background="@drawable/bg_select_item"
+              android:orientation="vertical">
+
+    <RelativeLayout
+            android:id="@+id/file_folder_view"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+        <ImageView
+                android:id="@+id/file_folder_preview"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ico_folder_file"
+                android:layout_marginStart="10dp"/>
+
+        <TextView
+                android:id="@+id/file_folder_nameview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/file_folder_preview"
+                android:layout_toLeftOf="@+id/file_folder_arrow_view"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="16sp"
+                android:layout_toEndOf="@+id/file_folder_preview"
+                android:layout_toStartOf="@+id/file_folder_arrow_view"/>
+
+        <ImageView
+                android:id="@+id/file_folder_arrow_view"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/ico_arrow"
+                android:layout_marginEnd="12dp"/>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="65dp"
+                android:background="@color/bg_divider_line"
+                android:layout_marginStart="65dp"/>
+
+    </RelativeLayout>
+
+    <!--文件-->
+    <RelativeLayout
+            android:id="@+id/file_item_root_view"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:visibility="gone">
+
+        <ImageView
+                android:id="@+id/file_item_checked_view"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="12dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ico_checkbox_normal"
+                android:layout_marginStart="12dp"/>
+
+        <ImageView
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/file_item_checked_view"
+                android:id="@+id/file_item_preview"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ico_folder_file"
+                android:layout_toEndOf="@+id/file_item_checked_view"
+                android:layout_marginStart="15dp"/>
+        <!--文件名及大小-->
+        <LinearLayout
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/file_item_preview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toEndOf="@+id/file_item_preview"
+                android:layout_marginStart="20dp">
+
+            <TextView
+                    android:id="@+id/file_item_nameview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:ellipsize="end"/>
+
+            <TextView
+                    android:layout_marginTop="3dp"
+                    android:id="@+id/folder_item_file_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textColor="#999999"
+                    android:textSize="12sp"/>
+        </LinearLayout>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="65dp"
+                android:background="@color/bg_divider_line"
+                android:layout_marginStart="65dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
