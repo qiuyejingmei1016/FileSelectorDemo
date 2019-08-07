@@ -25,6 +25,7 @@
                 android:visibility="visible"/>
     </RelativeLayout>
 
+    <!--内部存储-->
     <LinearLayout
             android:visibility="gone"
             android:id="@+id/storage_internal_view"
