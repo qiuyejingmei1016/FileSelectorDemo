@@ -26,7 +26,8 @@ import java.util.List;
  * @createTime: 2019/8/7 15:14
  * @className: FileHomeActivity
  */
-public class FileHomeActivity extends Activity implements View.OnClickListener, PermissonUtils.PermissionCallback {
+public class FileHomeActivity extends Activity implements View.OnClickListener,
+        PermissonUtils.PermissionCallback {
 
     private String mInternalPath;//内部存储路径
     private String mExternalPath;//外部存储路径(sd卡)

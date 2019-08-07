@@ -3,14 +3,12 @@ package com.yyh.fileselector.ui.activity;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.TextView;
 
 import com.yyh.fileselector.R;
 import com.yyh.fileselector.logic.FileSelecteKeys;
-import com.yyh.fileselector.util.SDCardScanner;
 import com.yyh.fileselector.util.StringUtil;
 
 import java.util.ArrayList;

@@ -87,7 +87,7 @@ public class FileSelectAdapter extends BaseAdapter {
                 }
                 String fileName = file.getName();
                 holder.fileItemNameview.setText(StringUtil.getNotNullString(fileName));
-                holder.fileItemSizeview.setText(StringUtil.getNotNullString(StringUtil.FormetFileSize(file.length())));
+                holder.fileItemSizeview.setText(StringUtil.getNotNullString(StringUtil.formetFileSize(file.length())));
                 getFileBySuffix(file, fileName, holder.fileItemPreview);
             }
         }

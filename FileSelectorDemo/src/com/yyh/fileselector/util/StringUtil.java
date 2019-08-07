@@ -114,9 +114,11 @@ public final class StringUtil {
     }
 
     /**
-     * 转换文件大小
+     * 获取文件大小
+     *
+     * @param size file.length()
      */
-    public static String FormetFileSize(long size) {//转换文件大小
+    public static String formetFileSize(long size) {//转换文件大小
         DecimalFormat df = new DecimalFormat("#.00");
         String result = "";
         if (size < 1024) {

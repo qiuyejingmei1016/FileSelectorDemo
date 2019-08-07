@@ -24,6 +24,13 @@ import java.util.List;
 public class SDCardScanner {
 
     /**
+     *说明：
+     * getExtSDCardPaths 测试只适用于获取内部存储路径信息  部分手机用于获取外部存储卡(sd卡)路径信息是无效
+     *
+     * getStoragePath 测试既可用于获取内部存储路径信息也可用于获取外部存储卡(sd卡)路径信息
+     */
+
+    /**
      * @return List<String>
      * @throws IOException
      * @Title: getExtSDCardPaths
