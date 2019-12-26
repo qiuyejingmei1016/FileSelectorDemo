@@ -1,0 +1,12 @@
+<resources>
+
+    <!-- component theme. -->
+    <style name="SDK_ComponentTheme_NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+    </style>
+
+    <style name="sdk_picker_image_folder_animator">
+        <item name="android:windowEnterAnimation">@anim/sdk_picker_dialog_slide_show</item>
+        <item name="android:windowExitAnimation">@anim/sdk_picker_dialog_slide_dismiss</item>
+    </style>
+
+</resources>
