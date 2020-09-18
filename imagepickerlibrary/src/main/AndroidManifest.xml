@@ -1,0 +1,43 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.lcw.library.imagepicker">
+
+    <uses-feature
+            android:name="android.hardware.camera"
+            android:required="true"/>
+    <uses-feature
+            android:name="android.hardware.camera.autofocus"
+            android:required="true"/>
+
+    <application>
+        <!--Android 7.0+文件共享配置,必须配置 -->
+        <provider
+                android:name="com.lcw.library.imagepicker.provider.ImagePickerProvider"
+                android:authorities="${applicationId}.provider"
+                android:exported="false"
+                android:grantUriPermissions="true">
+            <meta-data
+                    android:name="android.support.FILE_PROVIDER_PATHS"
+                    android:resource="@xml/sdk_image_picker"/>
+        </provider>
+
+        <!--图片列表界面-->
+        <activity
+                android:name="com.lcw.library.imagepicker.activity.ImagePickerActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/SDK_ComponentTheme_NoActionBar"/>
+
+        <!--大图预览界面-->
+        <activity
+                android:name="com.lcw.library.imagepicker.activity.ImagePreActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/SDK_ComponentTheme_NoActionBar"/>
+
+        <!--自定义证件照拍照界面-->
+        <activity
+                android:name="com.lcw.library.imagepicker.cardcamera.CameraActivity"
+                android:configChanges="keyboardHidden|orientation|screenSize"
+                android:screenOrientation="landscape"
+                android:theme="@style/SDK_Camera_Theme"/>
+    </application>
+
+</manifest>

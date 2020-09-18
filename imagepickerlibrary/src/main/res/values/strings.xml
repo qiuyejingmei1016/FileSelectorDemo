@@ -1,0 +1,21 @@
+<resources>
+
+    <string name="sdk_confirm">确认</string>
+
+    <string name="sdk_image_picker_text">图片选择器</string>
+    <string name="sdk_picker_scanner_image">正在扫描图片..</string>
+    <string name="sdk_select_image_max">最多选择%1$d张图片</string>
+    <string name="sdk_confirm_msg">确定(%1$d/%2$d)</string>
+    <string name="sdk_picker_image_num">%d张</string>
+    <string name="sdk_picker_all_media">全部</string>
+    <string name="sdk_picker_all_video">所有视频</string>
+    <string name="sdk_picker_take_photo">拍摄图片</string>
+    <string name="sdk_picker_permission_tip">当前没有读取存储卡或摄像头权限</string>
+    <string name="sdk_picker_image_select">选择</string>
+    <string name="sdk_picker_single_type_choose">不能同时选择图片与视频</string>
+
+    <string name="touch_to_focus">触摸屏幕对焦</string>
+    <string name="crop_fail">裁剪失败</string>
+    <string name="no_flash">该设备不支持闪光灯</string>
+
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="sdk_white">#FFFFFF</color>
+    <color name="sdk_back_color">#000000</color>
+
+    <color name="sdk_tool_bar_color">#303030</color>
+    <color name="sdk_bg_color">#303030</color>
+    <color name="sdk_picker_text_bg_gray">#99000000</color>
+
+    <color name="sdk_line_color">#dddddd</color>
+    <color name="sdk_preview_mock">#9a000000</color>
+    <color name="sdk_color_afff">#afff</color>
+</resources>
